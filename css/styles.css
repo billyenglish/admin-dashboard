@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body, html {
     height: 100%;
@@ -8,9 +8,13 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambay, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
+}
+
+body {
+    font-size: 62.5%;
 }
 
 .grid-container {
@@ -23,8 +27,8 @@ body, html {
 
 .header {
     display: grid;
-    grid-column: 3 / 12;
-    grid-row: 1 / 3;
+    grid-column: 3 / 13;
+    border: 1px solid black;
 }
 
 .search {
@@ -60,8 +64,51 @@ body, html {
 
 .main {
     display: grid;
-    grid-column: 3 / 12;
-    grid-row: 4 / 12;
+    grid-column: 3 / 13;
+    padding: 1rem;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-container {
+    display: grid;
+}
+
+.projects-container h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 1.5rem 0 1.75rem 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 20rem 26rem;
+    gap: 1rem;
+}
+
+.project-items {
+    display: grid;
+    border: 1px solid black;
+    padding: 1rem;
+    max-width: 20rem;
+}
+
+.announcements-trending h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 1.5rem 0 1.75rem 0;
+}
+
+.project-items h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: .75rem 0;
+}
+
+.project-items p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
 }
 
 /* Aside Section */
@@ -70,6 +117,16 @@ body, html {
     display: grid;
     grid-column: 1 / 3;
     grid-row: 1 / 12;
+    width: 100%;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
 }
 
 .nav-logo {
@@ -87,6 +144,15 @@ body, html {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2.5px;
+}
+
+.nav-top-menu {
+}
+
+.nav-bottom-menu {
+}
+
+.nav-list li {
 }
 
 
